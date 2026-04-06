@@ -10,7 +10,8 @@ const createRecord = (data, userId) => {
     return { id: info.lastInsertRowid, ...data };
 };
 
-
+// Added basic filtering for type and category. 
+// For dates, I'm using BETWEEN so the frontend can easily send range-based filters.
 const getAllRecords = (filters = {}) => {
     let query = 'SELECT * FROM records WHERE 1=1';
     const params = [];

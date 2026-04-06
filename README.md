@@ -27,12 +27,10 @@ Uses a Layered Architecture (Controller-Service-Route) to strictly separate HTTP
    npm run dev
    ```
 
-## Automated Tests
+## Manual Tests
 
-A full integration test suite is included. With the server running, open a second terminal and execute:
-```bash
-node test.js
-```
+A Postman Collection (postman_collection.json):
+this can be used along with below api information to perform tests
 
 ## Access Control
 
